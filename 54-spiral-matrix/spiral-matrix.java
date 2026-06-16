@@ -11,13 +11,11 @@ class Solution {
         
         while (top <= bottom && left <= right) {
             
-            
             for (int i = left; i <= right; i++) {
                 ans.add(matrix[top][i]);
             }
             top++;
-            
-           
+
             for (int i = top; i <= bottom; i++) {
                 ans.add(matrix[i][right]);
             }
